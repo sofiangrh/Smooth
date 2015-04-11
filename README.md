@@ -12,3 +12,6 @@ Themes include:
 
 # Installation
 Copy the directory to ~/.themes
+
+# Credits to
+(ramien43)[http://gnome-look.org/usermanager/search.php?username=ramien43]
