@@ -14,4 +14,4 @@ Themes include:
 Copy the directory to ~/.themes
 
 # Credits to
-(ramien43)[http://gnome-look.org/usermanager/search.php?username=ramien43]
+[ramien43](http://gnome-look.org/usermanager/search.php?username=ramien43)
