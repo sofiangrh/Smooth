@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Drakfire
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=Smooth
+MetacityTheme=Smooth
+IconTheme=AwOken
+GtkColorScheme=fg_color:#000000000000,bg_color:#cd92c76caed4,text_color:#000000000000,base_color:#e7e7e3e3d6d6,selected_fg_color:#ffffffffffff,selected_bg_color:#87b5816c673f,tooltip_fg_color:#ffffffffffff,tooltip_bg_color:#000000000000
+CursorTheme=whiteglass
+CursorSize=16
+NotificationTheme=standard

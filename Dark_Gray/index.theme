@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Dark_Gray
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=Smooth
+MetacityTheme=Smooth
+IconTheme=AwOken
+GtkColorScheme=fg_color:#000000000000,bg_color:#799578fb7694,text_color:#444443433f3f,base_color:#d264cdb0badc,selected_fg_color:#ffffffffffff,selected_bg_color:#808080808080,tooltip_fg_color:#ffffffffffff,tooltip_bg_color:#000000000000
+CursorTheme=whiteglass
+CursorSize=16
+NotificationTheme=standard

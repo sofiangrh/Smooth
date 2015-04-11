@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Dark_Dust
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=Smooth
+MetacityTheme=Smooth
+IconTheme=AwOken
+GtkColorScheme=fg_color:#000000000000,bg_color:#a0a098988080,text_color:#000000000000,base_color:#dce6dce6dce6,selected_fg_color:#ffffffffffff,selected_bg_color:#808080808080,tooltip_fg_color:#ffffffffffff,tooltip_bg_color:#000000000000
+CursorTheme=whiteglass
+CursorSize=16
+NotificationTheme=standard

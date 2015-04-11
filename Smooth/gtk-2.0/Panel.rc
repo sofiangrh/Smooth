@@ -1,0 +1,38 @@
+# Modified Panel stuff from h***
+# Marshall Neill - proverbial tweaker
+style "panel"
+{
+	bg[ACTIVE]	= shade (1.25,@bg_color) #shade( 0.90,@bg_color )#@bg_color #"#BFBAA6"
+	bg[NORMAL]	= @bg_color #shade( 1.0,@bg_color ) #"#FFFFFF"
+	bg[PRELIGHT]	= "#FFFFFF"
+	fg[NORMAL]	= shade (0.55,@bg_color) #"#707070"
+#	fg[NORMAL]	= shade (2.55,@bg_color) #"#707070" # use if you create a Dark theme
+	fg[ACTIVE]	= "#000000"
+	fg[PRELIGHT]	= "#000000"
+	
+	xthickness = 1
+	ythickness = 1
+	
+	engine "murrine" {
+		contrast	= 2.0
+		roundness	= 3
+		gradient_colors	= { shade( 1.0, @bg_color ), shade( 0.95, @bg_color ), shade( 0.90, @bg_color ), shade( 0.85, @bg_color) }
+		#gradient_shades	= { 1.0, 0.975, 0.95, 0.925 }	# on the dark side    the higher the number the brighter
+		glow_shade	= 6.0	#sets glow amount for buttons or widgets.
+		glowstyle	= 4	#centered glow
+		textstyle	= 1	#for an inset on the text (use carefully).
+	}
+		#"#291D4E", "#291D4E", "#291D4E", "#291D4E" } # sets the color dark blue
+}
+
+widget "*PanelWidget*" 		style "panel"
+widget "*PanelApplet*" 		style "panel"
+widget "*fast-user-switch*"	style "panel"
+class "PanelApp*"		style "panel"
+class "PanelToplevel*" 		style "panel"
+#widget_class "*Mail*" 		style "panel"
+widget_class "*notif*" 		style "panel"
+widget_class "*Notif*" 		style "panel"
+
+widget "*Xfce*Panel*"		style "panel"
+class "*Xfce*Panel*"		style "panel"

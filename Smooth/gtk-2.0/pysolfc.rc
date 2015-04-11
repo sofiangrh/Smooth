@@ -1,0 +1,74 @@
+style "pysol-window-base"
+{
+	bg[NORMAL]	= @base_color
+}
+
+style "pysol-menu" #= "pysol-default"
+{
+	xthickness = 3
+	ythickness = 3
+	bg[NORMAL] = @bg_color
+
+	engine "murrine"
+	{
+		contrast 		= 2.0
+		roundness 		= 5
+		rgba 			= TRUE
+	}
+}
+
+style "pysol-menu-item" = "pysol-menu"
+{
+	xthickness = 3 # spacing of menu items
+	ythickness = 3
+	
+	fg[SELECTED] = "#FFFFFF"
+	fg[PRELIGHT] = "#FFFFFF"    		# Color of selected menu item text.
+	bg[SELECTED] = shade (0.5,@bg_color) 	# Color of menu items.
+  
+  	engine "murrine" 
+	{
+		menuitemstyle	= 1   # 0 = flat, 1 = 3d-ish (gradient), 2 = stripes
+		roundness	= 4   # just a bit
+		contrast 	= 1.5 # provides a border on the raised gradient
+	}
+  
+}
+
+#Left in for posterity.  Haven't figured out what they do as no entries to menu..... change anything.
+style "pysol-menubar"  
+{ 
+	fg[SELECTED] = "#FFFFFF"
+	bg[NORMAL] =  @bg_color #shade(1.075, @bg_color)
+}
+style "pysol-menubar-item" = "pysol-default"
+{
+	ythickness = 4
+	fg[NORMAL] = @selected_fg_color
+	fg[ACTIVE] = @selected_fg_color
+}
+class "GtkWidget"       style "pysol-default"
+class "GtkMenu"         style "pysol-menu"
+class "GtkMenuItem"     style "pysol-menu-item"
+class "GtkToolbar"      style "pysol-toolbar"
+class "GtkMenuBar"      style "pysol-menubar"
+
+# menus
+widget_class "*.<GtkMenuItem>.*"	style "pysol-menu-item"
+
+
+#widget		"*pysol"				style "pysol-window-base"
+#widget		"*pysol*Splitter"			style "pixmap-sidebar-handle-left"
+#widget_class	"*pysol*View"			style "murrine-thin"
+#widget_class	"*pysol*pysolSidePane*"		style "pysol-sidebar"
+#widget_class	"*pysol*pysolSidePane*Scrolled*"	style "murrine-scrollbar-sidebar"
+#widget_class	"*pysol*Statusbar*"			style "pysol-statusbar"
+#widget_class	"*pysol*Scale*"			style "pysol-scale"
+
+#widget_class	"*pysol*Notebook"			style "murrine-thin"
+
+#widget "*.pysol-extra-view-widget" 			style : highest "pysol-extra-view"
+
+#widget_class "*pysolPathBar.*ToggleButton*"		style "pysol-breadcrumbs" 
+#widget "pysol*left_slider*"				style "pysol-left-slider" 
+#widget "pysol*right_slider*"				style "pysol-right-slider"
